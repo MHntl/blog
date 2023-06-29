@@ -1,0 +1,223 @@
+
+
+/*------------GENEL YAPI--------*/
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/static/Montserrat-Light.ttf  );
+    font-weight: 300;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/static/Montserrat-Regular.ttf  );
+    font-weight: 400;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/static/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/static/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/static/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box; /*KUTUNUN BOYUTLARINI SEN BELİRLERSİN OTAMATİK GELMEZ*/
+    color: #424242;
+}
+/*^^^^^^^^^^^^^^^^^GENEL YAPI^^^^^^^^^^^^^*/
+
+/*----------------BODY-----------------*/
+body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+/*^^^^^^^^^^^^^^^^^BODY^^^^^^^^^^^^^^^^^*/
+
+
+/*-------------HEADER----------------*/
+    .app__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    
+    }
+    .app_links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    }
+    .app_links:hover{
+        cursor: pointer;
+    }
+    .app_links li{
+    margin-right: 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    
+    }
+    .app_links li.active{
+        font-size: 14px;
+        font-weight: 600;
+        color: #5A47AB;
+    }
+    .app_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    }   
+   .app__title{
+    margin-right: 1rem;
+   }
+/*^^^^^^^^^^^^^^HEADER^^^^^^^^^^^^^^^^^*/
+
+
+
+
+/*-----------------MAIN---------------*/
+
+/*-------------SHOWCASE---------------*/
+.app__showcase{
+    display: flex;
+margin: 5rem 0;
+   /* margin-top: 10rem;*/
+}
+.app__showcase-info{
+    flex: 6;
+    padding:0 3rem ;
+
+}
+.app__showcase-info h1, h3{
+    font-size: 52px;
+    margin: 0;
+}
+.app__showcase-info h1{
+    color: #D05270;
+    font-weight: bold;
+}
+.app__showcase-info h3{
+font-weight: 500;
+}
+.app__showcase-info p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.app__showcase-image{
+    flex: 4;
+     /* position: relative; */
+    /*  bottom: 145px;*/
+}
+.app__links{   
+   display: flex;
+   justify-content: space-between;
+   margin-top: 3rem;
+}
+.app__links .app__link {
+    display: flex;
+    color: #fff;
+    font-size: 12px;
+    width:30%;
+    height: 60px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    }
+    .app__links .app__link img{
+        margin-right: 1.5rem;
+    }
+.app__link.twitter{
+    background-color: #47ACDF;
+}
+.app__link.linkedin{
+    background-color: #1275B1;
+}
+.app__link.medium{
+    background-color: #000;
+}
+/*^^^^^^^^^^^^SHOWCASE^^^^^^^^^^^^^^^*/
+
+/*-----------BLOG-----------*/
+.app_blog-categories{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;    
+}
+.app_blog-categories .item{
+   
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 2rem;
+    cursor: pointer;
+
+}
+.app_blog-categories .item.active{
+    color: #D05270 ;
+    border-bottom: solid 1px #D05270;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+/*^^^^^^^^^^^^^BLOG^^^^^^^^^^^^*/
+
+/*------------POST--------------*/
+.app__post-list{
+    display:flex ;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap; /*SAĞA UZATMASINI ENGELLEMEK İÇİNKULLANILIR.ŞİMDİ AŞAGI DOĞRU UZATICAK*/
+}
+.app__post-list .app__post-card{
+    display: flex;
+    flex-direction: column;
+    flex:0 0 50% ;
+    /*width: 590;
+      height: 415.49; */
+    transform: scale(0.85); 
+    }
+.app__post-card h3.post-title{
+    color: #D05270;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+     
+.app__post-card a.post-detail{
+    
+    color: #D05270;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid #D05270;
+    width: fit-content;
+
+}    
+/*^^^^^^^^^^^^POST^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^MAIN^^^^^^^^^^^^^^*/
+
+/*-----------FOOTER--------------*/
+.footer{
+    position: relative;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+/*^^^^^^^^^^^^FOOTER^^^^^^^^^^^^^^^^*/
